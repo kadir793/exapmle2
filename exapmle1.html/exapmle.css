@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    border: 0px;
+}
+h1{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right,#35d399,#fbe048);
+    font-weight: 900;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(#332b2a,#000 60%);
+   
+
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3 ,1fr);
+    gap: 10px;
+}
+.grid .col{
+    background: rgba(255, 255, 255, .05);
+    border-radius:5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 20px;
+    gap: 5px;
+    transition: 230ms all;
+    cursor: pointer;
+    &:hover{
+        transform:scale(1.05);
+    }
+
+}
+
+h6{
+    color: white;
+    font-size:22px;
+    font-weight: 500;
+
+}
+p{
+    color: rgb(255, 255, 255,.5 );
+    font-size: 16px;
+}
+button{
+    height: 40px;
+    background:white ;
+    font-size: 15px;
+    border-radius:20px ;
+    margin-top: 10px;
+    padding: 0px 25px;
+
+}
+
+.col:first-child{
+    border-radius: 40px 5px 5px 40px;
+}
+.col:last-child{
+    border-radius: 5px 40px 40px 5px;
+}
